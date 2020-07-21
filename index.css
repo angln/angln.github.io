@@ -1,0 +1,111 @@
+button{
+  text-transform: uppercase;
+}
+h1{
+  font-size: 50pt;
+
+}
+h2{
+  font-size: 30pt;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+.productName{
+  color: white;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  padding:50px;
+  background-color: #a38fb5;
+}
+.img{
+  height: 100%;
+  width: 100%;
+  background: url("https://www.takefoto.ru/img/articles/big_eegh3cyw.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card{
+  margin: 20px;
+  background-color: pink;
+}
+input{
+  border-radius: 50%;
+}
+.about{
+  display: grid;
+  height: 200px;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+.dignity .cardList{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dignity .card{
+  display: grid;
+  grid-template-columns: 33px 1fr;
+}
+.dignity .img{
+  height: 33px;
+  width: 33px;
+  background: url("pllus.png");
+  background-size: contain ;
+}
+.screenshots .cardList{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.screenshots  .card{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.screenshots .img{
+  height: 100%;
+  width: 100%;
+}
+.review .cardList{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.review  .card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.buy .cardList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+}
+.buy button:hover{
+  border-radius:50%;
+}
+.star-rating{
+  font-size: 0;
+}
+.star-rating__wrap{
+  display: inline-block;
+  font-size: 1rem;
+}
+.star-rating__wrap:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.star-rating__ico{
+  float: right;
+  padding-left: 2px;
+  cursor: pointer;
+  color: #FFB300;
+}
+.star-rating__ico:last-child{
+  padding-left: 0;
+}
+.star-rating__input{
+  display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+  content: "\f005";
+}
